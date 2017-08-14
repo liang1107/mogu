@@ -1,0 +1,61 @@
+
+@import "reset.scss";
+
+
+@font-face {
+  font-family: 'iconfont';  /* project id 361407 */
+  src: url('//at.alicdn.com/t/font_0qkwjznmqpycik9.eot');
+  src: url('//at.alicdn.com/t/font_0qkwjznmqpycik9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_0qkwjznmqpycik9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_0qkwjznmqpycik9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_0qkwjznmqpycik9.svg#iconfont') format('svg');
+}
+
+.iconfont{
+    font-family: 'iconfont';
+}
+
+.displayn{
+    display: none;
+}
+.displayb{
+    display: block;
+}
+
+
+@mixin displayflex{
+     display:-webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flexcolumn{
+     -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -moz-box-orient:vertical;
+    -moz-box-direction:normal;
+    flex-direction:column;
+    -webkit-flex-direction:column;
+}
+@mixin flexwrap{
+    -webkit-flex-wrap:wrap;
+    -webkit-box-lines:multiple;
+    -moz-flex-wrap:wrap;
+    flex-wrap:wrap;
+}
+@mixin rowcenter{
+    -webkit-justify-content:center;
+    justify-content:center;
+    -moz-box-pack:center;
+-webkit--moz-box-pack:center;
+        box-pack:center;
+}
+@mixin columncenter{
+    align-items:center;
+    -webkit-align-items:center;
+    box-align:center;
+    -moz-box-align:center;
+    -webkit-box-align:center;
+}

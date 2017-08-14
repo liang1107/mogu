@@ -1,0 +1,28 @@
+@import "./main.scss";
+#shophead{
+    @include displayflex
+    width: 100%;height: 100%;border-bottom: 1px solid #E2E2E2;box-sizing: border-box;
+    .back{
+        width: 40px;height: 100%;text-align: center;line-height: 40px;
+    }
+    .go1{
+        flex: 1;margin: 7px 0;
+        
+        font-size: 14px;line-height: 23px;text-align: center;
+        span{
+            padding: 7px;
+        }
+        
+    }
+    .zhuxiao{
+        width: 40px;height: 100%;text-align: center;line-height: 40px;
+        font-size: 12px;
+    }
+}
+#shopcontent{
+    width: 100%;
+    ul{
+        width: 70%;margin: 100px auto;color: #eee;
+    }
+    
+}

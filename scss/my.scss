@@ -1,0 +1,27 @@
+@import "./main.scss";
+#myhead{
+    @include displayflex
+    width: 100%;height: 100%;border-bottom: 1px solid #E2E2E2;box-sizing: border-box;
+    .back{
+        width: 40px;height: 100%;text-align: center;line-height: 40px;
+    }
+    .go1{
+        flex: 1;margin: 7px 0;
+        
+        font-size: 14px;line-height: 23px;text-align: center;
+        span{
+            padding: 7px;
+        }
+        
+    }
+    .zhuxiao{
+        width: 40px;height: 100%;text-align: center;line-height: 40px;
+        font-size: 12px;
+    }
+}
+#mycontent{
+    width: 100%;
+    .name{
+        width: 80%;margin: 20px auto;text-align: center;font-size: 18px;box-sizing: border-box;
+    }
+}

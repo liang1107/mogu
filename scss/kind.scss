@@ -1,0 +1,75 @@
+@import "main.scss";
+#kindhead{
+    @include displayflex
+    width: 100%;height: 100%;border-bottom: 1px solid #E2E2E2;box-sizing: border-box;
+    .liuyan{
+        width: 40px;height: 100%;text-align: center;line-height: 40px;
+    }
+    .input{
+        flex: 1;margin: 7px 0;
+        background:#eee;
+        font-size: 14px;line-height: 23px;
+        span{
+            padding: 7px;
+        }
+        
+    }
+    .che{
+        width: 40px;height: 100%;text-align: center;line-height: 40px;
+    }
+}
+#kindcontent{
+    width: 100%;height: 100%;display: flex;
+    .nav1{
+        width: 25%;height: 100%;overflow-y: auto;background: #F6F6F6;display: flex;
+        flex-wrap: wrap;&::-webkit-scrollbar{width:0px}
+        a{
+            width: 100%;
+            height: 38px;display: flex;flex-direction: column;justify-content: center;align-items: center;
+        }
+        .aw{background: #fff; color:#FF5577;}
+    }
+    .right{
+        flex: 1;height: 100%;background: #fff;overflow-y: auto;&::-webkit-scrollbar{width:4px}
+        .right1{
+            display: flex;flex-wrap: wrap;
+            div{
+                width: 33%;display: flex;flex-direction: column;justify-content: center;align-items: center;
+                margin-top:15px;
+                img{
+                    width: 70%;height: 54px;
+                }
+            }
+        }
+        .right2{
+            width: 100%;display: flex;height: 33px;border-top: 1px solid #E2E2E2;margin-top: 5px;
+            border-bottom: 1px solid #E2E2E2;
+            a{
+                flex: 1;height: 12px;text-align: center;display: block;text-align: center;border-right: 1px solid #E2E2E2;
+                margin-top: 10px;
+            }
+        }
+        .right3{
+            width: 100%;display:flex;flex-wrap: wrap;box-sizing: border-box;
+            padding-left: 4%;margin-top: 5px;
+            div{
+                width: 46%;margin-right: 3%;
+                img{
+                    width:100%;height: 156px;
+                }
+                p:nth-of-type(1){
+                    width:90%;margin-left: 5%;white-space: nowrap;
+                    overflow: hidden;text-overflow: ellipsis;line-height: 16px;
+                }
+                p:nth-of-type(2){
+                    span:nth-of-type(1){
+                        color:red;
+                    }
+                    span:nth-of-type(2){
+                        float: right;color: #666;
+                    }
+                }
+            }
+        }
+    }
+}
